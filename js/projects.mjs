@@ -1,3 +1,3 @@
-import { transitionPage } from "./utils/pageTransitions.mjs";
+import { transitionPage } from "../js/utils/pageTransitions.mjs";
 
 transitionPage();
