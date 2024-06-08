@@ -1,0 +1,547 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: var(--body-font);
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li,
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: +0.5px;
+}
+
+body {
+  background-color: #121212;
+}
+
+:root {
+  --display-font: "Exo 2", sans-serif;
+  --headline-font: "Orienta", sans-serif;
+  --title-font: "Orienta", sans-serif;
+  --label-font: "Orienta", sans-serif;
+  --body-font: "Mukta Vaani", sans-serif;
+
+  /* colors */
+  --text-color: #fff;
+  --background-color: #121212;
+  --section-color1: rgb(44, 44, 44);
+  --section-color2: rgb(230, 115, 80);
+  --section-color3: rgb(57, 57, 57);
+
+  /*Button colors */
+  --button-color: #ff4500;
+  --button-hover-color: rgb(204, 60, 0);
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-container {
+  height: 100vh;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  height: 200px;
+}
+
+.header-container {
+  padding: 10px 0;
+  color: white;
+  margin-bottom: 40px;
+  background-color: #333;
+}
+
+.header-container ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.header-container ul li a {
+  font-size: 20px;
+}
+
+/* Typography */
+
+.headline-text {
+  font-family: var(--headline-font);
+  font-size: 32px;
+  letter-spacing: 0%;
+  line-height: 40px;
+  color: white;
+}
+
+.title-text {
+  font-family: var(--headline-font);
+  font-size: 22px;
+  letter-spacing: 0%;
+  line-height: 28px;
+  color: white;
+}
+
+.label-text {
+  font-family: var(--label-font);
+  font-size: 14px;
+  letter-spacing: +0.1px;
+  line-height: 20px;
+  color: white;
+}
+
+.name h1 {
+  font-family: var(--display-font);
+  font-weight: normal;
+  font-style: normal;
+  font-size: 200px;
+  color: rgb(255, 255, 255);
+  /* transform: scale3d(1, 1, 1); */
+  transform: perspective(1px) translateZ(0);
+  letter-spacing: 0em;
+}
+
+.name span {
+  display: inline-block; 
+  transition: transform 0.3s ease; 
+  white-space: nowrap; 
+  transform: rotate3d(1, 0, 0, 30deg); 
+}
+
+.name span:hover {
+  transform: scale(1.5); 
+  color: #ff4500; 
+}
+
+.name h1 {
+  cursor: default;
+}
+
+.form-container {
+  margin-top: 20px;
+  padding: 40px;
+  border: 1px solid #333;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  background-color: #444;
+  color: white;
+  font-family: var(--body-font);
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  background-color: #444;
+  color: white;
+  font-family: var(--body-font);
+}
+
+.form-container button {
+  padding: 10px;
+  border: none;
+  background-color: var(--button-color);
+  color: white;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.project-card {
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.project-card:hover {
+  z-index: 1;
+  border: 1px solid #333;
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.project-card-image {
+  min-height: 200px;
+  border-radius: 10px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  border: 1px solid #333; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+.bottom-portion img {
+  width: 60px;
+}
+
+.links img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+
+
+.htmlIcon {
+  width: 30px;
+  height: 28px;
+  position: absolute;
+  left: 28px;
+  top: 130px;
+  transform: rotate(21deg);
+}
+
+.cssIcon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 4px;
+  top: 77px;
+  transform: rotate(0deg);
+}
+
+.jsIcon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 43px;
+  top: 139px;
+}
+
+.reactIcon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 60px;
+}
+
+.bootstrapIcon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 28px;
+  top: 80px;
+  transform: rotate(-15deg);
+}
+
+/* Animation */
+
+.animateHtmlIcon {
+  animation: animateHtml 1s;
+}
+
+.animateCssIcon {
+  animation: animateCss infinite 2s;
+}
+
+.animateJsIcon {
+  animation: animateJs 1.2s;
+}
+
+.animateReactIcon {
+  animation: animateReactIcon 1s infinite;
+}
+
+.animateBootstrapIcon {
+  animation: animateBootstrapIcon 1s;
+}
+
+.bootstrap-transform {
+  width: 70px; 
+  height: 30px; 
+  background-color: #007bff; 
+  text-align: center;
+  line-height: 30px; 
+  color: white;
+  border-radius: 5px;
+}
+
+@keyframes animateBootstrapIcon {
+  20% {
+    top: -10px;
+    transform: rotate(10deg);
+  }
+  40% {
+    top: -10px;
+    transform: rotate(20deg);
+  }
+  60% {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes animateReactIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animateJs {
+
+  20% {
+    rotate: 10deg;
+  }
+  40% {
+  }
+
+  50% {
+  }
+
+  60% {
+    top: -74px;
+  }
+
+  80% {
+    rotate: 45deg;
+  }
+
+  100% {
+  }
+}
+
+@keyframes animateCss {
+  10% {
+    transform: rotate(4deg);
+  }
+
+  20% {
+    transform: rotate(8deg);
+  }
+
+  30% {
+    transform: rotate(12deg);
+  }
+
+  40% {
+    transform: rotate(16deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes animateHtml {
+  20% {
+    top: 80px;
+  }
+  40% {
+    left: 40px;
+  }
+
+  50% {
+    rotate: 45deg;
+  }
+  100% {
+  }
+}
+
+.divider {
+  border-top: 1px solid #333;
+  margin: 20px 0;
+  transform: scale3d(1, 1, 1);
+}
+
+/* Utility classes */
+.flex {
+  display: flex;
+}
+.direction-column {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Tablet media query */
+@media screen and (max-width: 1024px) {
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: +0.25px;
+  }
+
+  .headline-text {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0%;
+  }
+
+  .title-text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: +0.15px;
+  }
+
+  .label-text {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: +0.5px;
+  }
+}
+/* Mobile media query */
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: +0.4px;
+  }
+
+  main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .name h1 {
+    font-size: 100px;
+  }
+
+  .headline-text {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+  }
+
+  .title-text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: +0.1px;
+  }
+
+  .label-text {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: +0.5px;
+  }
+
+  .htmlIcon {
+    width: 15px;
+    height: 14px;
+    position: absolute;
+    left: 14px;
+    top: 65px;
+    transform: rotate(21deg);
+  }
+
+  .cssIcon {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 2px;
+    top: 38.5px;
+    transform: rotate(0deg);
+  }
+
+  .jsIcon {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 21.5px;
+    top: 69.5px;
+  }
+
+  .reactIcon {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 5px;
+    top: 30px;
+  }
+
+  .bootstrapIcon {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 14px;
+    top: 40px;
+    transform: rotate(-15deg);
+  }
+
+  @keyframes animateHtml {
+    20% {
+      top: 40px;
+    }
+    40% {
+      left: 20px;
+    }
+
+    50% {
+      rotate: 45deg;
+    }
+    100% {
+    }
+  }
+
+  @keyframes animateJs {
+    20% {
+      rotate: 10deg;
+    }
+    40% {
+    }
+  
+    50% {
+    }
+  
+    60% {
+      top: -50px;
+    }
+  
+    80% {
+      rotate: 45deg;
+    }
+  
+    100% {
+    }
+  }
+
+
+}
