@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Øyvind Riisnes</title>
-</head>
-<body>
-    
-</body>
+    <!--Resets-->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Orienta&display=swap" rel="stylesheet" />
+    <script src="./js/main.mjs" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container flex align-center justify-center">
+        <div>
+          <ul class="flex">
+            <li><a href="">Home</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/projects.html">Projects</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="flex direction-column">
+        <div class="name flex justify-center align-center">
+          <h1 class="flex">
+            <span id="ø"
+              >Ø
+              <img class="htmlIcon" src="assets/icons8-html5.svg" alt="html icon" />
+            </span>
+            <span id="y"
+              >y
+              <img class="cssIcon" src="assets/css-3-svgrepo-com.svg" alt="css icon" />
+            </span>
+            <span id="v"
+              >v
+              <img class="jsIcon" src="/assets/javascript-logo-svgrepo-com.svg" alt="javascript icon" />
+            </span>
+            <span id="i"
+              >&#x0131;
+              <img class="reactIcon" src="assets/react-javascript-js-framework-facebook-svgrepo-com.svg" alt="react icon" />
+            </span>
+            <span id="n"
+              >n
+              <img class="bootstrapIcon" src="assets/icons8-bootstrap.svg" alt="bootstrap icon" />
+            </span>
+            <span id="d">d</span>
+          </h1>
+        </div>
+
+        <div class="text-under-name flex justify-center">
+          <h2>
+            Front End<br />
+            Developer
+          </h2>
+        </div>
+        <div class="divider"></div>
+        <div class="bottom-portion flex justify-center">
+          <a href="https://github.com/Oyvindeavor" target="_blank">
+            <img src="assets/939731_git_github_hub icon_icon.svg" alt="Github icon" />
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
