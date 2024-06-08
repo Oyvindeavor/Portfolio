@@ -4,10 +4,11 @@ import { transitionPage } from "../js/utils/pageTransitions.mjs";
 document.addEventListener("DOMContentLoaded", () => {
     animateName();
     transitionPage();
-    noScroll();
+    disableScroll();
     }
 );
 
-function noScroll() {
-    window.scrollTo(0, 0);
+// Prevents scrolling on the homepage as i dont want scrolling on the homepage
+function disableScroll() {
+    document.addEventListener("touchmove", preventDefault, { passive: false });
 }
