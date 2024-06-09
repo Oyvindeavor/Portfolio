@@ -10,9 +10,6 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-
   background-color: #121212;
 }
 
@@ -72,7 +69,7 @@ main {
   padding: 20px;
   text-align: center;
   color: white;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .form-container {
