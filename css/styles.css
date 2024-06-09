@@ -1,6 +1,5 @@
 html,
 body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: white;
@@ -8,6 +7,13 @@ body {
   scroll-behavior: smooth;
   opacity: 1;
   transition: opacity 0.4s ease-in-out;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #121212;
 }
 
 * {
@@ -36,10 +42,6 @@ p {
   letter-spacing: +0.5px;
 }
 
-body {
-  background-color: #121212;
-}
-
 :root {
   --display-font: "Exo 2", sans-serif;
   --headline-font: "Orienta", sans-serif;
@@ -62,25 +64,33 @@ body {
 main {
   max-width: 800px;
   margin: 0 auto;
+  min-height: 100vh;
 }
 
-.main-container {
-  height: 100vh;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
+.footer-container {
+  box-shadow: 0 0 10px 0 rgba(163, 116, 116, 0.5);
+  padding: 20px;
   text-align: center;
-  height: 200px;
+  color: white;
+  margin-top: 100px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin-bottom: 40px;
 }
 
 .header-container {
   padding: 10px 0;
   color: white;
   margin-bottom: 40px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 0 rgba(163, 116, 116, 0.5);
 }
 
 .header-container ul {
@@ -143,6 +153,10 @@ footer {
   cursor: pointer;
 }
 
+.icons a {
+  margin: 20px;
+}
+
 /* Typography */
 
 .headline-text {
@@ -175,7 +189,6 @@ footer {
   font-style: normal;
   font-size: 200px;
   color: rgb(255, 255, 255);
-  /* transform: scale3d(1, 1, 1); */
   transform: perspective(1px) translateZ(0);
   letter-spacing: 0em;
   transition: transform ease-out 0.5s;
@@ -259,7 +272,6 @@ footer {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   border: 1px solid #333;
   padding: 20px;
-  box-sizing: border-box;
   grid-gap: 20px;
 }
 
@@ -533,8 +545,8 @@ footer {
   }
 
   main {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .name h1 {
