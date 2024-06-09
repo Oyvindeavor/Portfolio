@@ -237,12 +237,13 @@ header {
   padding: 10px;
   border: none;
   background-color: var(--button-color);
-  color: white;
+  color: black;
   cursor: pointer;
 }
 
 .form-container button:hover {
   background-color: var(--button-hover-color);
+  color: white;
 }
 
 .project-card {
