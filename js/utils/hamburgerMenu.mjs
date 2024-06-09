@@ -5,11 +5,12 @@ function HamburgerToggle() {
   
       hamburgerMenu.addEventListener('click', () => {
         mobileMenu.classList.add('show');
-        console.log('clicked');
+        document.body.classList.add('no-scroll');
       });
   
       closeMenu.addEventListener('click', () => {
         mobileMenu.classList.remove('show');
+        document.body.classList.remove('no-scroll');
       });
   }
 
